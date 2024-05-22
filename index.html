@@ -29,42 +29,55 @@
 
                     <div class="row px-4">
                         <div class="col-4 mb-3 text-center flag-lang text-white d-flex flex-column align-items-center">
-                            <button type="button" 
-                                class="btn btn-outline-dark btn-lg">Spanish</button>
+                            <!-- data-bs-dismiss="modal" para que al elegir idioma cierre el modal --> 
+                            <button data-bs-dismiss="modal" type="button" 
+                                class="btn btn-outline-dark btn-lg"
+                                onclick="changeLanguage('es')">Spanish</button>
                         </div>
                         <div class="col-4 mb-3 text-center flag-lang text-white d-flex flex-column align-items-center">
-                            <button type="button"
-                                class="btn btn-outline-dark btn-lg">English</button>
+                            <button data-bs-dismiss="modal" type="button"
+                                class="btn btn-outline-dark btn-lg"
+                                onclick="changeLanguage('en')">English</button>
                         </div>
                         <div class="col-4 mb-3 text-center flag-lang text-white d-flex flex-column align-items-center">
-                            <button type="button" class="btn btn-outline-dark btn-lg">Chinese</button>
+                            <button data-bs-dismiss="modal" type="button" class="btn btn-outline-dark btn-lg"
+                            onclick="changeLanguage('zh')">Chinese</button>
                         </div>
                         <div class="col-4 mb-3 text-center flag-lang text-white d-flex flex-column align-items-center">
-                            <button type="button" class="btn btn-outline-dark btn-lg">Portuguese</button>
+                            <button data-bs-dismiss="modal" type="button" class="btn btn-outline-dark btn-lg"
+                            onclick="changeLanguage('pr')">Portuguese</button>
                         </div>
                         <div class="col-4 mb-3 text-center flag-lang text-white d-flex flex-column align-items-center">
-                            <button type="button" class="btn btn-outline-dark btn-lg">French</button>
+                            <button data-bs-dismiss="modal" type="button" class="btn btn-outline-dark btn-lg"
+                            onclick="changeLanguage('fr')">French</button>
                         </div>
                         <div class="col-4 mb-3 text-center flag-lang text-white d-flex flex-column align-items-center">
-                            <button type="button" class="btn btn-outline-dark btn-lg">Italian</button>
+                            <button data-bs-dismiss="modal" type="button" class="btn btn-outline-dark btn-lg"
+                            onclick="changeLanguage('it')">Italian</button>
                         </div>
                         <div class="col-4 mb-3 text-center flag-lang text-white d-flex flex-column align-items-center">
-                            <button type="button" class="btn btn-outline-dark btn-lg">Russian</button>
+                            <button data-bs-dismiss="modal" type="button" class="btn btn-outline-dark btn-lg"
+                            onclick="changeLanguage('ru')">Russian</button>
                         </div>
                         <div class="col-4 mb-3 text-center flag-lang text-white d-flex flex-column align-items-center">
-                            <button type="button" class="btn btn-outline-dark btn-lg">Hindi</button>
+                            <button data-bs-dismiss="modal" type="button" class="btn btn-outline-dark btn-lg"
+                            onclick="changeLanguage('hi')">Hindi</button>
                         </div>
                         <div class="col-4 mb-3 text-center flag-lang text-white d-flex flex-column align-items-center">
-                            <button type="button" class="btn btn-outline-dark btn-lg">Arabic</button>
+                            <button data-bs-dismiss="modal" type="button" class="btn btn-outline-dark btn-lg"
+                            onclick="changeLanguage('ar')">Arabic</button>
                         </div>
                         <div class="col-4 mb-3 text-center flag-lang text-white d-flex flex-column align-items-center">
-                            <button type="button" class="btn btn-outline-dark btn-lg">Japanese</button>
+                            <button data-bs-dismiss="modal" type="button" class="btn btn-outline-dark btn-lg"
+                            onclick="changeLanguage('ja')">Japanese</button>
                         </div>
                         <div class="col-4 mb-3 text-center flag-lang text-white d-flex flex-column align-items-center">
-                            <button type="button" class="btn btn-outline-dark btn-lg">Korean</button>
+                            <button data-bs-dismiss="modal" type="button" class="btn btn-outline-dark btn-lg"
+                            onclick="changeLanguage('ko')">Korean</button>
                         </div>
                         <div class="col-4 mb-3 text-center flag-lang text-white d-flex flex-column align-items-center">
-                            <button type="button" class="btn btn-outline-dark btn-lg">German</button>
+                            <button data-bs-dismiss="modal" type="button" class="btn btn-outline-dark btn-lg"
+                            onclick="changeLanguage('de')">German</button>
                         </div>
                     </div>
                 </div>
@@ -76,7 +89,7 @@
         <h1 class="text-capitalize text-center" data-i18n="title">Consejos Fundamentales para Programadores
             Principiantes</h1>
 
-        <button type="button" class="btn btn-outline-dark position-fixed top-0 end-0 me-5 mt-4" data-bs-toggle="modal"
+        <button data-bs-dismiss="modal" type="button" class="btn btn-outline-dark position-fixed top-0 end-0 me-5 mt-4" data-bs-toggle="modal"
             data-bs-target="#exampleModal">
             <i class="bi bi-translate"></i> translate
         </button>
@@ -90,8 +103,8 @@
                     <div class="d-inline-flex align-items-center justify-content-center fs-1 mb-3">
                         <i class="bi bi-book"></i>
                     </div>
-                    <h3 class="fs-2 text-body-emphasis">Empieza con los fundamentos</h3>
-                    <p>
+                    <h3 class="fs-2 text-body-emphasis" data-i18n="subtitle1">Empieza con los fundamentos</h3>
+                    <p data-i18n="paragraph1">
                         Aprende los conceptos básicos de la programación antes de profundizar en un lenguaje o
                         tecnología específica. Entender cómo funcionan las variables, las estructuras de control, las
                         funciones, etc., te dará una base sólida para construir sobre ella.
@@ -102,8 +115,8 @@
                     <div class="d-inline-flex align-items-center justify-content-center fs-1 mb-3">
                         <i class="bi bi-code-slash"></i>
                     </div>
-                    <h3 class="fs-2 text-body-emphasis">Elige un lenguaje de programación y práctica</h3>
-                    <p>
+                    <h3 class="fs-2 text-body-emphasis" data-i18n="subtitle2">Elige un lenguaje de programación y práctica</h3>
+                    <p data-i18n="paragraph2">
                         No te abrumes intentando aprender varios lenguajes a la vez. Elije uno que te interese y
                         comienza a practicar con él. Python es una buena opción para principiantes, ya que es fácil de
                         aprender y tiene una amplia comunidad de soporte.
@@ -114,8 +127,8 @@
                     <div class="d-inline-flex align-items-center justify-content-center fs-1 mb-3">
                         <i class="bi bi-emoji-frown"></i>
                     </div>
-                    <h3 class="fs-2 text-body-emphasis">No tengas miedo de cometer errores</h3>
-                    <p>
+                    <h3 class="fs-2 text-body-emphasis" data-i18n="subtitle3">No tengas miedo de cometer errores</h3>
+                    <p data-i18n="paragraph3">
                         Los errores son parte del proceso de aprendizaje. No te desanimes si algo no funciona a la
                         primera. Aprende de tus errores y sigue adelante.
                     </p>
@@ -125,8 +138,8 @@
                     <div class="d-inline-flex align-items-center justify-content-center fs-1 mb-3">
                         <i class="bi bi-calendar-check"></i>
                     </div>
-                    <h3 class="fs-2 text-body-emphasis">Practica regularmente</h3>
-                    <p>
+                    <h3 class="fs-2 text-body-emphasis" data-i18n="subtitle4">Practica regularmente</h3>
+                    <p data-i18n="paragraph4">
                         La programación es como cualquier otra habilidad: cuanto más practiques, mejor serás. Dedica
                         tiempo regularmente a escribir código y resolver problemas de programación.
                     </p>
@@ -136,22 +149,19 @@
                     <div class="d-inline-flex align-items-center justify-content-center fs-1 mb-3">
                         <i class="bi bi-hand-index-fill"></i>
                     </div>
-                    <h3 class="fs-2 ">No temas pedir ayuda</h3>
-                    <p>
+                    <h3 class="fs-2" data-i18n="subtitle5">No temas pedir ayuda</h3>
+                    <p data-i18n="paragraph5">
                         La mejor manera de aprender es construir cosas. Empieza con proyectos pequeños y aumenta
                         gradualmente la complejidad a medida que adquieras más experiencia, pero si te ves abrumado no
                         dudes es solicitar apoyo de otras personas que puedan guiarte
                     </p>
                 </div>
-
-
-
                 <div class="feature col">
                     <div class="d-inline-flex align-items-center justify-content-center fs-1 mb-3">
                         <i class="bi bi-bookmark"></i>
                     </div>
-                    <h3 class="fs-2 text-body-emphasis">Busca recursos de aprendizaje</h3>
-                    <p>
+                    <h3 class="fs-2 text-body-emphasis" data-i18n="subtitle6">Busca recursos de aprendizaje</h3>
+                    <p data-i18n="paragraph6">
                         Hay una gran cantidad de recursos en línea disponibles, como tutoriales, cursos, libros y foros
                         de discusión. Aprovecha estos recursos para aprender nuevos conceptos y resolver problemas.
                     </p>
@@ -161,8 +171,8 @@
                     <div class="d-inline-flex align-items-center justify-content-center fs-1 mb-3">
                         <i class="bi bi-people"></i>
                     </div>
-                    <h3 class="fs-2 text-body-emphasis">Colabora con otros</h3>
-                    <p>
+                    <h3 class="fs-2 text-body-emphasis" data-i18n="subtitle7">Colabora con otros</h3>
+                    <p data-i18n="paragraph7">
                         Únete a comunidades de programadores, participa en proyectos de código abierto o busca un
                         mentor. La colaboración con otros programadores te ayudará a aprender nuevas habilidades y a ver
                         diferentes enfoques para resolver problemas.
@@ -173,8 +183,8 @@
                     <div class="d-inline-flex align-items-center justify-content-center fs-1 mb-3">
                         <i class="bi bi-arrow-clockwise"></i>
                     </div>
-                    <h3 class="fs-2 text-body-emphasis">Mantente actualizado</h3>
-                    <p>
+                    <h3 class="fs-2 text-body-emphasis" data-i18n="subtitle8">Mantente actualizado</h3>
+                    <p data-i18n="paragraph8">
                         La tecnología en el mundo de la programación avanza rápidamente. Mantente al día con las últimas
                         tendencias, herramientas y prácticas recomendadas.
                     </p>
@@ -184,8 +194,8 @@
                     <div class="d-inline-flex align-items-center justify-content-center fs-1 mb-3">
                         <i class="bi bi-lightbulb"></i>
                     </div>
-                    <h3 class="fs-2 text-body-emphasis">Persiste</h3>
-                    <p>
+                    <h3 class="fs-2 text-body-emphasis" data-i18n="subtitle9">Persiste</h3>
+                    <p data-i18n="paragraph9">
                         La programación puede ser desafiante en ocasiones, pero no te rindas. Con perseverancia y
                         práctica, mejorarás con el tiempo.
                     </p>
@@ -197,7 +207,7 @@
             </div>
         </div>
     </main>
-
+    <script type="module" src="./src/js/translator.js"></script>
     <script type="module" src="./src/js/main.js"></script>
 </body>
 
